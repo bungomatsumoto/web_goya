@@ -9,7 +9,7 @@ end
 server = WEBrick::HTTPServer.new({
   :DocumentRoot => '.',
   :CGIInterpreter => WEBrick::HTTPServlet::CGIHandler::Ruby,
-  :Port => '2000',
+  :Port => '3000',
 })
 ['INT', 'TERM'].each {|signal|
   Signal.trap(signal){ server.shutdown }
